@@ -1,0 +1,144 @@
+body {
+    background-color: #0C0F14;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+    width: 100%;
+}
+
+.header-logo {
+    font-size: 1.5em;
+    margin-left: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header-nav-list ul {
+    display: none;
+    list-style: none;
+    gap: 16px;
+    font-size: 18px;
+}
+
+.header-nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+}
+
+.header-nav-list a:hover {
+    text-decoration: underline;
+}
+
+a.nav-list-active {
+    background-color: #CCE300;
+    border-radius: 6px;
+    color: #0c1014;
+    pointer-events: none;
+}
+
+.precos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.precos-planos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px  rgba(0, 0, 0, 0.2);
+}
+
+.planos-title {
+    text-transform: uppercase;
+    border-bottom: 2px solid #CCE300;
+    letter-spacing: 2px;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+.precos-planos p {
+    margin-top: 0;
+}
+
+.preco-em-real {
+    font-size: 1.5em;
+}
+
+.planos-caracteristicas {
+    margin: 0 0 35px;
+    padding-left: 0;
+    list-style-position: inside;
+    line-height: 1.8;
+    flex: 1;
+    color: #bcbcbc;
+}
+
+.planos-caracteristicas li::marker {
+    color: #CCE300;
+}
+
+.precos-botao-assinar {
+    text-decoration: none;
+    background-color: #CCE300;
+    color: #0c1014;
+    text-transform: uppercase;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+}
+
+.precos-botao-assinar:hover {
+    outline: 1px solid #CCE300;
+    background-color: transparent;
+    color: #CCE300;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A0A0E;
+    padding: 16px;
+}
+
+@media screen and (min-width: 60em) {
+    body {
+        max-width: 960px;
+    }
+    
+    .main-title {
+        font-size: 4em;
+    }
+    
+    .header-logo {
+        font-size: 2.2em;
+    }
+    
+    .header-nav-list ul {
+        display: flex;
+    }
+    
+    .precos {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+}
+
